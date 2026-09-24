@@ -1,66 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="CryptoShield AI helps users review suspicious crypto activity before signing.">
-<title>CryptoShield AI | Smarter Crypto Security</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="CryptoShield AI helps users review suspicious crypto activity before signing."
+  >
+
+  <title>CryptoShield AI | Smarter Crypto Security</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<a class="skip-link" href="#main-content">Skip to content</a>
-<header class="site-header">
-  <a class="brand" href="index.html"><span class="brand-mark">CS</span> CryptoShield <b>AI</b></a>
-  <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
-  <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
-    <a class="active" aria-current="page" href="index.html">Home</a>
-    <a href="features.html">Features</a><a href="dashboard.html">Dashboard</a>
-    <a href="security.html">Security</a><a href="pricing.html">Pricing</a>
-    <a href="about.html">About</a><a class="nav-cta" href="contact.html">Get Protected</a>
-  </nav>
-</header>
-<main id="main-content">
-<section class="hero">
-  <div>
-    <p class="eyebrow">AI-POWERED CRYPTO SECURITY</p>
-    <h1>Spot the scam <span>before</span> you sign.</h1>
-    <p class="hero-text">CryptoShield AI turns suspicious wallet, transaction, token, and contract signals into clear warnings you can understand before taking action.</p>
-    <div class="hero-actions"><a class="btn btn-primary" href="dashboard.html">Open Security Dashboard</a><a class="btn btn-ghost" href="features.html">Explore Features</a></div>
-    <div class="trust-row"><span>✓ Risk analysis</span><span>✓ Smart alerts</span><span>✓ Wallet insights</span></div>
-  </div>
-  <div class="hero-card glass">
-    <div class="scan-ring"><div class="scan-core">AI</div></div>
-    <p class="status-pill safe">● SYSTEM READY</p>
-    <h2>Threat Scanner</h2><p>Monitoring security signals around the clock.</p>
-    <div class="mini-metrics"><div><strong>98.7%</strong><small>Signal coverage</small></div><div><strong>24/7</strong><small>Monitoring</small></div></div>
-  </div>
-</section>
-<section class="section">
-  <div class="section-heading"><p class="eyebrow">WHY IT MATTERS</p><h2>Pause. Check. Then transact.</h2><p>Crypto transactions can be irreversible. CryptoShield AI is designed to put useful warning signals in front of you before you approve a risky action.</p></div>
-  <div class="feature-grid">
-    <article class="feature-card"><div class="icon">AI</div><h3>AI Risk Detection</h3><p>Analyze patterns and explain suspicious signals in plain language.</p></article>
-    <article class="feature-card"><div class="icon">◈</div><h3>Wallet Intelligence</h3><p>Review wallet activity, interactions, and security signals in one place.</p></article>
-    <article class="feature-card"><div class="icon">!</div><h3>Smart Alerts</h3><p>Get clear warnings when an address or transaction deserves a closer look.</p></article>
-  </div>
-</section>
-<section class="section split-section">
-  <div><p class="eyebrow">BUILT FOR CLARITY</p><h2>Security information without the technical overload.</h2><p>CryptoShield AI is designed to explain complex blockchain signals so users can slow down, investigate, and make informed decisions.</p><a class="text-link" href="security.html">See how protection works →</a></div>
-  <div class="terminal glass"><div class="terminal-top"><i></i><i></i><i></i><b>cryptoshield-scan</b></div><pre><code>$ scan wallet 0x7A...91C
+
+  <!-- Keyboard accessibility -->
+  <a class="skip-link" href="#main-content">
+    Skip to main content
+  </a>
+
+  <!-- Site Header -->
+  <header class="site-header">
+
+    <a class="brand" href="index.html" aria-label="CryptoShield AI home">
+      <span class="brand-mark" aria-hidden="true">CS</span>
+      CryptoShield <b>AI</b>
+    </a>
+
+    <!-- Mobile navigation button -->
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="primary-nav"
+      aria-label="Open navigation menu"
+    >
+      <span aria-hidden="true">☰</span>
+    </button>
+
+    <!-- Main navigation -->
+    <nav
+      id="primary-nav"
+      class="primary-nav"
+      aria-label="Main navigation"
+    >
+      <a
+        class="active"
+        aria-current="page"
+        href="index.html"
+      >
+        Home
+      </a>
+
+      <a href="features.html">Features</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="security.html">Security</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+
+      <a class="nav-cta" href="contact.html">
+        Get Protected
+      </a>
+    </nav>
+
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+
+      <div>
+
+        <p class="eyebrow">
+          AI-POWERED CRYPTO SECURITY
+        </p>
+
+        <h1 id="hero-heading">
+          Spot the scam <span>before</span> you sign.
+        </h1>
+
+        <p class="hero-text">
+          CryptoShield AI turns suspicious wallet, transaction, token,
+          and contract signals into clear warnings you can understand
+          before taking action.
+        </p>
+
+        <div class="hero-actions">
+
+          <a
+            class="btn btn-primary"
+            href="dashboard.html"
+          >
+            Open Security Dashboard
+          </a>
+
+          <a
+            class="btn btn-ghost"
+            href="features.html"
+          >
+            Explore Features
+          </a>
+
+        </div>
+
+        <div
+          class="trust-row"
+          aria-label="CryptoShield AI capabilities"
+        >
+          <span>
+            <span aria-hidden="true">✓</span>
+            Risk analysis
+          </span>
+
+          <span>
+            <span aria-hidden="true">✓</span>
+            Smart alerts
+          </span>
+
+          <span>
+            <span aria-hidden="true">✓</span>
+            Wallet insights
+          </span>
+        </div>
+
+      </div>
+
+      <!-- Threat Scanner -->
+      <div
+        class="hero-card glass"
+        aria-labelledby="scanner-heading"
+      >
+
+        <div
+          class="scan-ring"
+          aria-hidden="true"
+        >
+          <div class="scan-core">AI</div>
+        </div>
+
+        <p class="status-pill safe">
+          <span aria-hidden="true">●</span>
+          SYSTEM READY
+        </p>
+
+        <h2 id="scanner-heading">
+          Threat Scanner
+        </h2>
+
+        <p>
+          Monitoring security signals around the clock.
+        </p>
+
+        <div
+          class="mini-metrics"
+          aria-label="Threat scanner metrics"
+        >
+
+          <div>
+            <strong>98.7%</strong>
+            <small>Signal coverage</small>
+          </div>
+
+          <div>
+            <strong>24/7</strong>
+            <small>Monitoring</small>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Why It Matters -->
+    <section
+      class="section"
+      aria-labelledby="why-heading"
+    >
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          WHY IT MATTERS
+        </p>
+
+        <h2 id="why-heading">
+          Pause. Check. Then transact.
+        </h2>
+
+        <p>
+          Crypto transactions can be irreversible.
+          CryptoShield AI is designed to put useful warning
+          signals in front of you before you approve a risky action.
+        </p>
+
+      </div>
+
+      <div class="feature-grid">
+
+        <article class="feature-card">
+
+          <div
+            class="icon"
+            aria-hidden="true"
+          >
+            AI
+          </div>
+
+          <h3>
+            AI Risk Detection
+          </h3>
+
+          <p>
+            Analyze patterns and explain suspicious signals
+            in plain language.
+          </p>
+
+        </article>
+
+        <article class="feature-card">
+
+          <div
+            class="icon"
+            aria-hidden="true"
+          >
+            ◈
+          </div>
+
+          <h3>
+            Wallet Intelligence
+          </h3>
+
+          <p>
+            Review wallet activity, interactions, and security
+            signals in one place.
+          </p>
+
+        </article>
+
+        <article class="feature-card">
+
+          <div
+            class="icon"
+            aria-hidden="true"
+          >
+            !
+          </div>
+
+          <h3>
+            Smart Alerts
+          </h3>
+
+          <p>
+            Get clear warnings when an address or transaction
+            deserves a closer look.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- Clarity Section -->
+    <section
+      class="section split-section"
+      aria-labelledby="clarity-heading"
+    >
+
+      <div>
+
+        <p class="eyebrow">
+          BUILT FOR CLARITY
+        </p>
+
+        <h2 id="clarity-heading">
+          Security information without the technical overload.
+        </h2>
+
+        <p>
+          CryptoShield AI is designed to explain complex blockchain
+          signals so users can slow down, investigate, and make
+          informed decisions.
+        </p>
+
+        <a
+          class="text-link"
+          href="security.html"
+        >
+          See how protection works
+          <span aria-hidden="true">→</span>
+        </a>
+
+      </div>
+
+      <!-- Security Scan Example -->
+      <div
+        class="terminal glass"
+        aria-labelledby="terminal-heading"
+      >
+
+        <div class="terminal-top">
+
+          <i aria-hidden="true"></i>
+          <i aria-hidden="true"></i>
+          <i aria-hidden="true"></i>
+
+          <b id="terminal-heading">
+            cryptoshield-scan
+          </b>
+
+        </div>
+
+        <pre><code>$ scan wallet 0x7A...91C
 &gt; checking address history...
 &gt; checking contract interactions...
 &gt; checking token approvals...
 &gt; risk signals found: 02
 &gt; status: REVIEW REQUIRED
-&gt; recommendation: PAUSE &amp; VERIFY</code></pre></div>
-</section>
-</main>
-<footer class="site-footer">
-  <div><a class="brand" href="index.html"><span class="brand-mark">CS</span> CryptoShield <b>AI</b></a><p>Intelligent tools for safer crypto decisions.</p></div>
-  <div><h3>Explore</h3><a href="features.html">Features</a><a href="dashboard.html">Dashboard</a><a href="security.html">Security</a></div>
-  <div><h3>Company</h3><a href="about.html">About</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a></div>
-  <div><h3>Notice</h3><p class="small">Prototype only. No tool can guarantee detection or prevent loss.</p></div>
-  <div class="footer-bottom">© 2026 CryptoShield AI. Built for safer crypto awareness.</div>
-</footer>
-<script src="script.js"></script>
+&gt; recommendation: PAUSE &amp; VERIFY</code></pre>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+
+    <div>
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="CryptoShield AI home"
+      >
+        <span
+          class="brand-mark"
+          aria-hidden="true"
+        >
+          CS
+        </span>
+
+        CryptoShield <b>AI</b>
+      </a>
+
+      <p>
+        Intelligent tools for safer crypto decisions.
+      </p>
+
+    </div>
+
+    <div>
+
+      <h3>Explore</h3>
+
+      <a href="features.html">Features</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="security.html">Security</a>
+
+    </div>
+
+    <div>
+
+      <h3>Company</h3>
+
+      <a href="about.html">About</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+
+    </div>
+
+    <div>
+
+      <h3>Notice</h3>
+
+      <p class="small">
+        Prototype only. No tool can guarantee detection
+        or prevent loss.
+      </p>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 CryptoShield AI. Built for safer crypto awareness.
+    </div>
+
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
 </body>
 </html>
